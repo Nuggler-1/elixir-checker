@@ -67,7 +67,7 @@ def pad32Bytes(data):
         s = "0" + s
       return s
 
-def get_proxy(private, privates=DEFAULT_ADDRESSES): 
+def get_proxy(private, privates=DEFAULT_KEYS): 
 
     with open(DEFAULT_PROXIES, 'r') as f: 
         proxies = f.read().splitlines()
@@ -89,7 +89,7 @@ def check_proxy():
 
     with open(DEFAULT_PROXIES, 'r') as f: 
         proxies = f.read().splitlines()
-    with open(DEFAULT_ADDRESSES, 'r') as f: 
+    with open(DEFAULT_KEYS, 'r') as f: 
         keys = f.read().splitlines()
         private_keys = []
         for key in keys: 

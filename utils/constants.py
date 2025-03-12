@@ -1,4 +1,4 @@
 BASE_PATH = 'user_data/'
 
-DEFAULT_ADDRESSES = BASE_PATH + 'addresses.txt'
+DEFAULT_KEYS = BASE_PATH + 'private_keys.txt'
 DEFAULT_PROXIES = BASE_PATH + 'proxies.txt'
